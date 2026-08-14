@@ -10,7 +10,7 @@ First step is to get the files into the gateway. use the following command in a 
 
 That will upload the files.
 
-The next step is to run this 
+The next step is to run this. You can get the password from Bruce, Alex or Jensen.
 <pre>
 # Remove ALL existing certificates (including ones with private keys)
 :foreach c in=[/certificate find] do={ 
