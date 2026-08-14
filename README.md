@@ -2,6 +2,8 @@
 THis is to upload eleven OS cert files
 
 First step is to get the files into the gateway. use the following command in a '''New Terminal''' of the Mikrotik gateway
+> **⚠️ Warning**
+> You will need to run each line one at a time for this to work.
 
 <pre>
   /tool fetch url=https://air2data-2.github.io/air2data-2.guthub.io/mikrotik.crt
