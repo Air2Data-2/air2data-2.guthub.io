@@ -1,0 +1,12 @@
+:foreach c in=[/certificate find] do={ /certificate remove $c }
+
+/certificate import file-name=mikrotik.crt
+
+/certificate import file-name=server.key pass=zqqwqihz
+
+/ip service set www-ssl certificate=mikrotik.crt_0 disabled=no
+
+:foreach p in=[/ip hotspot profile find] do={ :if ([:find [/ip hotspot profile get $p login-by] "https"] != nil) do={ /ip hotspot profile set $p ssl-certificate=mikrotik.crt_0 } }
+
+/certificate pri
+
